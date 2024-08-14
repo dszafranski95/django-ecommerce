@@ -1,0 +1,38 @@
+<!-- shop/templates/shop/components/footer.html -->
+<footer class="bg-dark text-white text-center py-3 mt-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h5>O nas</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">Nasza historia</a></li>
+                    <li><a href="#" class="text-white">Kariera</a></li>
+                    <li><a href="#" class="text-white">Zespół</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5>Pomoc</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">Centrum Pomocy</a></li>
+                    <li><a href="#" class="text-white">Zwroty i reklamacje</a></li>
+                    <li><a href="#" class="text-white">Dostawa</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5>Moje konto</h5>
+                <ul class="list-unstyled">
+                    <li><a href="{% url 'account_login' %}" class="text-white">Zaloguj się</a></li>
+                    <li><a href="{% url 'account_signup' %}" class="text-white">Zarejestruj się</a></li>
+                    <li><a href="#" class="text-white">Moje zamówienia</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5>Kontakt</h5>
+                <p>Email: <a href="mailto:kontakt@sklep.com" class="text-white">kontakt@sklep.com</a></p>
+                <p>Telefon: +48 123 456 789</p>
+            </div>
+        </div>
+        <hr class="bg-white">
+        <p>&copy; 2024 Sklep e-commerce. Wszelkie prawa zastrzeżone.</p>
+    </div>
+</footer>

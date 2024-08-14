@@ -1,0 +1,103 @@
+/* shop/static/shop/styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Dostosowanie tła i kolorów dla navbaru */
+.navbar {
+    background-color: #FFA500; /* Zmień na kolor odpowiadający Twoim wymaganiom */
+}
+
+.nav-link {
+    color: #fff; /* Biały kolor tekstu */
+}
+
+.nav-link:hover {
+    color: #000; /* Czarny kolor po najechaniu */
+}
+
+.mega-dropdown-menu {
+    background-color: #f8f9fa; /* Jasne tło dla rozwijanego menu */
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 600px; /* Szerokość mega menu */
+    left: 0;
+    right: 0;
+    margin: auto; /* Wyśrodkuj menu */
+    border-radius: 5px;
+}
+
+.mega-dropdown-menu .dropdown-header {
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+.mega-dropdown-menu .dropdown-item {
+    display: block;
+    width: auto;
+    color: #343a40;
+    padding: 0.25rem 1rem; /* Dostosowanie odstępu wewnętrznego */
+}
+
+.mega-dropdown-menu .dropdown-item:hover {
+    background-color: #e9ecef;
+    color: #212529;
+}
+
+.d-flex.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Stylizacja przycisków formularza */
+.form-inline .form-control {
+    border-radius: 20px;
+    padding-left: 20px;
+}
+
+.form-inline .btn-outline-light {
+    border: none;
+    border-radius: 20px;
+}
+
+.form-inline .btn-outline-light:hover {
+    background-color: #fff;
+    color: #FFA500;
+}
+
+/* Układ ikon w navbarze */
+.navbar-nav.ml-auto .nav-item .nav-link img {
+    width: 20px;
+}
+
+.navbar-nav.ml-auto .nav-item .nav-link i {
+    font-size: 20px;
+    margin-right: 5px;
+}

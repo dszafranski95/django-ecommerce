@@ -1,0 +1,13 @@
+<!-- shop/templates/shop/index.html -->
+{% extends 'shop/base.html' %}
+
+{% block title %}
+    Sklep e-commerce - Strona Główna
+{% endblock %}
+
+{% block content %}
+    {% include 'shop/components/carousels/mainCarousel.html' %}
+    
+    <h1>Witamy w naszym sklepie e-commerce!</h1>
+    <p>Zapraszamy do zakupów w naszym sklepie. Znajdziesz tu najlepsze produkty w atrakcyjnych cenach.</p>
+{% endblock %}

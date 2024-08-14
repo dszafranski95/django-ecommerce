@@ -1,0 +1,12 @@
+# Ignoruj środowisko wirtualne
+venv/
+
+# Ignoruj plik z konfiguracją środowiska
+.env
+
+# Opcjonalnie, zignoruj inne pliki lub foldery, które nie powinny być śledzone przez Git
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+db.sqlite3

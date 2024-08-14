@@ -1,0 +1,83 @@
+<!-- shop/templates/shop/components/header.html -->
+{% load static %}
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FFA500;">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <img src="{% static 'shop/logo.png' %}" alt="Logo" style="width: 80px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Bestsellery <span class="badge badge-danger">HOT</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Promocje</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Wyprzedaże</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Nowości</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="kategorieDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Kategorie
+          </a>
+          <div class="dropdown-menu mega-dropdown-menu" aria-labelledby="kategorieDropdown">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <h6 class="dropdown-header">Moda</h6>
+                  <a class="dropdown-item" href="#">Bluzki i koszulki damskie</a>
+                  <a class="dropdown-item" href="#">Spodnie damskie</a>
+                  <a class="dropdown-item" href="#">Sukienki damskie</a>
+                  <a class="dropdown-item" href="#">Odzież męska</a>
+                  <a class="dropdown-item" href="#">Obuwie damskie</a>
+                  <a class="dropdown-item" href="#">Obuwie męskie</a>
+                </div>
+                <div class="col-md-4">
+                  <h6 class="dropdown-header">Dom i kuchnia</h6>
+                  <a class="dropdown-item" href="#">Wyposażenie kuchni</a>
+                  <a class="dropdown-item" href="#">Wyposażenie łazienki</a>
+                  <a class="dropdown-item" href="#">Meble</a>
+                  <a class="dropdown-item" href="#">Dekoracje</a>
+                </div>
+                <div class="col-md-4">
+                  <h6 class="dropdown-header">Elektronika</h6>
+                  <a class="dropdown-item" href="#">Smartfony</a>
+                  <a class="dropdown-item" href="#">Laptopy</a>
+                  <a class="dropdown-item" href="#">Sprzęt RTV</a>
+                  <a class="dropdown-item" href="#">Akcesoria elektroniczne</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Szukaj" aria-label="Search">
+        <button class="btn btn-outline-light my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+      </form>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/accounts/login/">Zaloguj / Zarejestruj</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Zamówienia i konto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fas fa-question-circle"></i> Pomoc</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><img src="{% static 'shop/pl.png' %}" alt="PL" style="width: 20px;"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
